@@ -1,0 +1,12 @@
+import radio
+import microbit
+
+
+radio.on()
+
+radio.config(channel=22)
+
+while True:
+    if microbit.button_a.was_pressed():
+        radio.send("hedensolden")
+    
